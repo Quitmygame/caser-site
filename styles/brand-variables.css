@@ -1,0 +1,155 @@
+/* Brand Variables for CASER */
+:root {
+  /* Page Background */
+  --brand-page-bg: linear-gradient(180deg, #2B2D30 0%, #1A1C1F 100%);
+  --brand-page-bg-mobile: linear-gradient(180deg, #2B2D30 0%, #1A1C1F 100%);
+  
+  /* Header */
+  --brand-header-bg: linear-gradient(180deg, rgba(43, 45, 48, 0.95) 0%, rgba(26, 28, 31, 0.95) 100%);
+  --brand-header-actions-gap-mobile: 0.8rem;
+  --brand-header-actions-gap: 1.2rem;
+  
+  /* Accent Color (Purple/Pink) */
+  --brand-accent: #7D5FFF;
+  --brand-accent-hover: #6B45E0;
+  --brand-accent-light: #9B7FFF;
+  
+  /* Buttons */
+  --brand-button-primary-bg: #7D5FFF;
+  --brand-button-primary-border: #7D5FFF;
+  --brand-button-primary-text: #FFFFFF;
+  --brand-button-primary-bg-hover: #6B45E0;
+  --brand-button-secondary-bg: rgba(255, 255, 255, 0.08);
+  --brand-button-secondary-border: rgba(255, 255, 255, 0.1);
+  --brand-button-secondary-text: #FFFFFF;
+  
+  /* Balance Pill */
+  --brand-balance-pill-bg: rgba(255, 255, 255, 0.08);
+  --brand-balance-pill-border: rgba(255, 255, 255, 0.1);
+  
+  /* Rewards CTA */
+  --brand-rewards-cta-bg: rgba(125, 95, 255, 0.15);
+  --brand-rewards-cta-border: rgba(125, 95, 255, 0.3);
+  
+  /* Drop Tabs */
+  --brand-drop-tab-active-bg: rgba(125, 95, 255, 0.2);
+  --brand-drop-tab-inactive-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Cards & Panels */
+  --brand-card-bg: rgba(255, 255, 255, 0.05);
+  --brand-card-border: rgba(255, 255, 255, 0.1);
+  --brand-card-bg-hover: rgba(255, 255, 255, 0.08);
+  
+  /* Text Colors */
+  --brand-text-primary: #FFFFFF;
+  --brand-text-secondary: rgba(255, 255, 255, 0.65);
+  --brand-text-muted: rgba(255, 255, 255, 0.45);
+  --brand-text-disabled: rgba(255, 255, 255, 0.3);
+  
+  /* White opacity variants */
+  --white-30: rgba(255, 255, 255, 0.08);
+  --white-40: rgba(255, 255, 255, 0.1);
+  --white-70: rgba(255, 255, 255, 0.12);
+  --white-100: rgba(255, 255, 255, 0.15);
+  --white-400: rgba(255, 255, 255, 0.6);
+  --white-450: rgba(255, 255, 255, 0.45);
+  --white-550: rgba(255, 255, 255, 0.55);
+  --white-650: rgba(255, 255, 255, 0.65);
+  --white-750: rgba(255, 255, 255, 0.75);
+  
+  /* Fonts */
+  --brand-font-body: 'Sofia Sans', sans-serif;
+  --brand-font-numeric: 'DS-Digital', monospace;
+  --brand-font-heading: 'Oswald', sans-serif;
+  
+  /* Rarity Colors */
+  --rarity-common: #B0B0B0;
+  --rarity-uncommon: #5E98D9;
+  --rarity-rare: #4B69FF;
+  --rarity-mythical: #8847FF;
+  --rarity-legendary: #D32CE6;
+  --rarity-ancient: #EB4B4B;
+  --rarity-exceeding: #E4AE39;
+  
+  /* Case rarity gradients */
+  --case-common-gradient: linear-gradient(135deg, #B0B0B0 0%, #8A8A8A 100%);
+  --case-uncommon-gradient: linear-gradient(135deg, #5E98D9 0%, #4A7AB8 100%);
+  --case-rare-gradient: linear-gradient(135deg, #4B69FF 0%, #3A55E0 100%);
+  --case-mythical-gradient: linear-gradient(135deg, #8847FF 0%, #6B35D0 100%);
+  --case-legendary-gradient: linear-gradient(135deg, #D32CE6 0%, #B025C0 100%);
+  --case-ancient-gradient: linear-gradient(135deg, #EB4B4B 0%, #C43D3D 100%);
+  --case-exceeding-gradient: linear-gradient(135deg, #E4AE39 0%, #C4942E 100%);
+  
+  /* Live Drop */
+  --brand-live-drop-bg: rgba(0, 0, 0, 0.3);
+  --brand-live-drop-border: rgba(255, 255, 255, 0.1);
+  
+  /* Footer */
+  --brand-footer-bg: #151618;
+  --brand-footer-border: rgba(255, 255, 255, 0.05);
+  
+  /* Scrollbar */
+  --brand-scrollbar-thumb: rgba(255, 255, 255, 0.16);
+  --brand-scrollbar-track: transparent;
+  
+  /* Shadows */
+  --brand-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --brand-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --brand-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --brand-shadow-accent: 0 4px 20px rgba(125, 95, 255, 0.3);
+  
+  /* Border Radius */
+  --brand-radius-sm: 0.2rem;
+  --brand-radius-md: 0.4rem;
+  --brand-radius-lg: 0.8rem;
+  --brand-radius-xl: 1.2rem;
+  --brand-radius-full: 9999px;
+  
+  /* Transitions */
+  --brand-transition-fast: 0.15s ease;
+  --brand-transition-normal: 0.2s ease-out;
+  --brand-transition-slow: 0.3s ease;
+  
+  /* Upgrade */
+  --brand-upgrade-track-bg: rgba(255, 255, 255, 0.1);
+  --brand-upgrade-progress-bg: #7D5FFF;
+  
+  /* Contract */
+  --brand-contract-slot-bg: rgba(255, 255, 255, 0.05);
+  --brand-contract-slot-border: rgba(255, 255, 255, 0.1);
+  
+  /* Battle */
+  --brand-battle-player-bg: rgba(255, 255, 255, 0.05);
+  --brand-battle-player-border: rgba(255, 255, 255, 0.1);
+  
+  /* Free cases */
+  --brand-free-case-timer-bg: rgba(125, 95, 255, 0.2);
+  --brand-free-case-timer-text: #FFFFFF;
+  
+  /* Notification/Toast */
+  --brand-toast-bg: #2B2D30;
+  --brand-toast-border: rgba(255, 255, 255, 0.1);
+  --brand-toast-success: #4CAF50;
+  --brand-toast-error: #F44336;
+  --brand-toast-warning: #FF9800;
+  --brand-toast-info: #2196F3;
+}
+
+/* Apply page background */
+html, body {
+  background: var(--brand-page-bg);
+  min-height: 100%;
+}
+
+body {
+  background: var(--brand-page-bg);
+  color: var(--brand-text-primary);
+  font-family: var(--brand-font-body);
+}
+
+/* Fix for mobile */
+@media (max-width: 992px) {
+  :root {
+    --brand-page-bg: var(--brand-page-bg-mobile);
+  }
+}

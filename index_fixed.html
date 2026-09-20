@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101112">
+    <title>КЕЙСЕР (CASER) - Официальный Сайт | Апгрейд предметов CS2</title>
+    <meta name="description" content="Кейсер (Caser) — обновляй предметы CS2 вместе с нами быстро, честно и с моментальным выводом. Кейсер — твой сайт для апгрейда инвентаря онлайн.">
+    
+    <!-- Preloads -->
+    <link rel="preload" href="/cdn/fa/icons/header/logo_text_ru.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="/cdn/fa/images/header/headerBG.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="/cdn/fa/icons/general/searchIconMob.svg" as="image">
+    <link rel="preload" href="/cdn/fa/icons/general/searchIconBlueMob.svg" as="image">
+    <link rel="preload" href="/cdn/fa/icons/liveDrop/allBlue.svg" as="image">
+    <link rel="preload" href="/cdn/fa/icons/liveDrop/hotGray.svg" as="image">
+    <link rel="preload" href="/cdn/fa/icons/socials/telegramIcon.svg" as="image">
+    <link rel="preload" href="/cdn/fa/icons/header/flagRu.svg" as="image">
+    <link rel="preload" href="/cdn/fa/icons/general/arrowDownIcon.svg" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/brand-variables.css">
+    <link rel="stylesheet" href="./styles/71ff51fd34deddbd.css">
+    <link rel="stylesheet" href="./styles/4bb329b805b5e0f2.css">
+    <link rel="stylesheet" href="./styles/3720dfa6fc7b3a44.css">
+    
+    <!-- Manifest & Icons -->
+    <link rel="manifest" href="/cdn/fa/site.webmanifest?v2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/cdn/fa/favicon.ico?v2">
+    <link rel="icon" href="/cdn/fa/favicon.ico?v2">
+    <link rel="icon" href="/cdn/fa/favicon-16x16.png?v2" sizes="16x16" type="image/png">
+    <link rel="icon" href="/cdn/fa/favicon-32x32.png?v2" sizes="32x32" type="image/png">
+    <link rel="icon" href="/cdn/fa/android-chrome-192x192.png?v2" sizes="192x192" type="image/png">
+    <link rel="icon" href="/cdn/fa/android-chrome-512x512.png?v2" sizes="512x512" type="image/png">
+    <link rel="apple-touch-icon" href="/cdn/fa/apple-touch-icon.png?v2" sizes="180x180" type="image/png">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://mc.yandex.ru">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- Canonical & Alternates -->
+    <link rel="canonical" href="https://caser.one/ru/cases">
+    <link rel="alternate" hreflang="ru" href="https://caser.gg/cis">
+    <link rel="alternate" hreflang="en" href="https://caser.gg/en">
+
+    <style>
+        /* Main Layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--brand-page-bg);
+            color: var(--brand-text-primary);
+            font-family: var(--brand-font-body);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--brand-header-bg);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--brand-header-actions-gap);
+        }
+
+        .logo img {
+            height: 3rem;
+            width: auto;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--brand-text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color var(--brand-transition-fast);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--brand-text-primary);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--brand-accent);
+            border-radius: 2px;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-btn img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .login-btn {
+            background: var(--brand-button-primary-bg);
+            color: var(--brand-button-primary-text);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--brand-radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--brand-transition-fast);
+        }
+
+        .login-btn:hover {
+            background: var(--brand-button-primary-bg-hover);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding-top: 12rem;
+            padding-bottom: 6rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-family: var(--brand-font-heading);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FFFFFF 0%, #B0B0B0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content p {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--brand-text-secondary);
+        }
+
+        /* Cases Section */
+        .cases-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .cases-section h2 {
+            font-family: var(--brand-font-heading);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--brand-text-primary);
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .case-card {
+            background: var(--brand-card-bg);
+            border: 1px solid var(--brand-card-border);
+            border-radius: var(--brand-radius-lg);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all var(--brand-transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(125, 95, 255, 0.1) 100%);
+            opacity: 0;
+            transition: opacity var(--brand-transition-normal);
+        }
+
+        .case-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--brand-accent);
+            box-shadow: var(--brand-shadow-accent);
+        }
+
+        .case-card:hover::before {
+            opacity: 1;
+        }
+
+        .case-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+        }
+
+        .case-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--brand-text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .case-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--brand-accent);
+        }
+
+        .case-rarity {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .rarity-common { background: var(--rarity-common); }
+        .rarity-uncommon { background: var(--rarity-uncommon); }
+        .rarity-rare { background: var(--rarity-rare); }
+        .rarity-mythical { background: var(--rarity-mythical); }
+        .rarity-legendary { background: var(--rarity-legendary); }
+        .rarity-ancient { background: var(--rarity-ancient); }
+        .rarity-exceeding { background: var(--rarity-exceeding); }
+
+        /* Live Drop Section */
+        .live-drop-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .live-drop-section h2 {
+            font-family: var(--brand-font-heading);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--brand-text-primary);
+        }
+
+        .live-drop-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .live-drop-item {
+            background: var(--brand-live-drop-bg);
+            border: 1px solid var(--brand-live-drop-border);
+            border-radius: var(--brand-radius-md);
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            transition: all var(--brand-transition-fast);
+        }
+
+        .live-drop-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .live-drop-item img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .live-drop-item span {
+            color: var(--brand-text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--brand-footer-bg);
+            border-top: 1px solid var(--brand-footer-border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-payment {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-payment img {
+            height: 2rem;
+            width: auto;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background: var(--brand-card-bg);
+            border-radius: var(--brand-radius-md);
+            transition: all var(--brand-transition-fast);
+        }
+
+        .social-link:hover {
+            background: var(--brand-accent);
+            transform: translateY(-2px);
+        }
+
+        .social-link img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .footer-info {
+            text-align: center;
+            color: var(--brand-text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .header-container {
+                padding: 0.75rem 1rem;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+            }
+
+            .cases-section,
+            .live-drop-section {
+                padding: 2rem 1rem;
+            }
+
+            .cases-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .user-actions {
+                gap: 0.5rem;
+            }
+
+            .login-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="__next">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="/cdn/fa/icons/header/logo_text_ru.webp" alt="CASER Logo">
+                </div>
+                <nav class="nav">
+                    <a href="/ru/cases" class="nav-link active">Кейсы</a>
+                    <a href="/ru/upgrade" class="nav-link">Апгрейд</a>
+                    <a href="/ru/contracts" class="nav-link">Контракты</a>
+                    <a href="/ru/battle" class="nav-link">Битва</a>
+                    <a href="/ru/free" class="nav-link">Бесплатно</a>
+                </nav>
+                <div class="user-actions">
+                    <button class="search-btn">
+                        <img src="/cdn/fa/icons/general/searchIconMob.svg" alt="Search">
+                    </button>
+                    <button class="login-btn">Войти через Steam</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-bg">
+                    <img src="/cdn/fa/images/header/headerBG.webp" alt="Background">
+                </div>
+                <div class="hero-content">
+                    <h1>КЕЙСЕР - Апгрейд предметов CS2</h1>
+                    <p>Открывай кейсы, улучшай скины, выводи мгновенно</p>
+                </div>
+            </section>
+
+            <!-- Cases Section -->
+            <section class="cases-section">
+                <h2>Популярные кейсы</h2>
+                <div class="cases-grid" id="casesGrid">
+                    <!-- Case cards will be dynamically loaded -->
+                </div>
+            </section>
+
+            <!-- Live Drop Section -->
+            <section class="live-drop-section">
+                <h2>Лайв дроп</h2>
+                <div class="live-drop-container">
+                    <div class="live-drop-item">
+                        <img src="/cdn/fa/icons/liveDrop/allBlue.svg" alt="Live Drop">
+                        <span>Все предметы</span>
+                    </div>
+                    <div class="live-drop-item">
+                        <img src="/cdn/fa/icons/liveDrop/hotGray.svg" alt="Hot Drop">
+                        <span>Горячие</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-payment">
+                    <img src="/cdn/fa/icons/footer/visaIcon.svg" alt="Visa">
+                    <img src="/cdn/fa/icons/footer/mastercardIcon.webp" alt="Mastercard">
+                    <img src="/cdn/fa/icons/footer/online.svg" alt="Online">
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">
+                        <img src="/cdn/fa/icons/socials/telegramIcon.svg" alt="Telegram">
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 CASER. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Case data with names and prices
+        const casesData = [
+            { id: 1, name: "Кейс новичка", price: "9 ₽", rarity: "common" },
+            { id: 2, name: "Серебряный кейс", price: "49 ₽", rarity: "uncommon" },
+            { id: 3, name: "Золотой кейс", price: "149 ₽", rarity: "rare" },
+            { id: 4, name: "Платиновый кейс", price: "299 ₽", rarity: "mythical" },
+            { id: 5, name: "Алмазный кейс", price: "599 ₽", rarity: "legendary" },
+            { id: 6, name: "Драконий кейс", price: "999 ₽", rarity: "ancient" },
+            { id: 7, name: "Кейс бога", price: "1999 ₽", rarity: "exceeding" },
+            { id: 8, name: "Элитный кейс", price: "399 ₽", rarity: "mythical" },
+            { id: 9, name: "Премиум кейс", price: "799 ₽", rarity: "legendary" },
+            { id: 10, name: "Ультимативный кейс", price: "1499 ₽", rarity: "ancient" },
+            { id: 11, name: "Легендарный кейс", price: "2499 ₽", rarity: "exceeding" }
+        ];
+
+        // Render case cards
+        function renderCases() {
+            const casesGrid = document.getElementById('casesGrid');
+            
+            casesData.forEach((caseItem, index) => {
+                const caseNum = index + 1;
+                const card = document.createElement('div');
+                card.className = 'case-card';
+                card.onclick = () => openCase(caseItem);
+                
+                card.innerHTML = `
+                    <div class="case-rarity rarity-${caseItem.rarity}"></div>
+                    <img src="/images/case-${caseNum}.webp" alt="${caseItem.name}" class="case-image" onerror="this.src='/images/case-1.webp'">
+                    <div class="case-name">${caseItem.name}</div>
+                    <div class="case-price">${caseItem.price}</div>
+                `;
+                
+                casesGrid.appendChild(card);
+            });
+        }
+
+        // Open case function (placeholder)
+        function openCase(caseItem) {
+            console.log('Opening case:', caseItem.name);
+            // Here you would implement the actual case opening logic
+            alert(`Открытие кейса: ${caseItem.name}\nЦена: ${caseItem.price}`);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', renderCases);
+    </script>
+</body>
+</html>
